@@ -336,6 +336,17 @@ img, svg { display: block; max-inline-size: 100%; }
   line-height: 1.9;
 }
 
+.invite__hosts-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 .invite__names {
   font-family: var(--ff-nastaliq);
   font-size: clamp(1.3rem, 5.6vw, 2.1rem);
@@ -1113,9 +1124,15 @@ html.is-sealed { overflow: hidden; }
 
         <div class="divider" aria-hidden="true"><svg class="divider__mark" viewBox="0 0 420 594"><use href="#i-lavender" width="420" height="594"></use></svg></div>
 
-        <p class="invite__lead">تتشرف السيدة/</p>
-        <p class="invite__host">فاطمة محمد الحربي </p>
-        <p class="invite__lead">بدعوتكنّ لحفل زفاف ابنها</p>
+        <p class="invite__lead">تتشرف كلٌّ من</p>
+
+        <div class="invite__hosts-line">
+          <span class="invite__host">أم أحمد السفري</span>
+          <span class="invite__lead">و</span>
+          <span class="invite__host">أم عبدالرحمن الصبحي</span>
+        </div>
+
+        <p class="invite__lead">بدعوتكنّ لحضور حفل زفاف</p>
 
         <h1 class="invite__names">خالد عبدالمعين السفري</h1>
 
